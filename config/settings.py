@@ -31,6 +31,8 @@ ALLOWED_HOSTS = []
 # Application definition
 
 INSTALLED_APPS = [
+    'accounts',
+    'authtest',
     'daphne',
     'chat',
     'django.contrib.admin',
@@ -134,3 +136,7 @@ CHANNEL_LAYERS = {
         },
     },
 }
+
+LOGIN_URL = 'login'
+LOGIN_REDIRECT_URL = 'home'
+LOGOUT_REDIRECT_URL = 'home'
